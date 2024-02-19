@@ -1,0 +1,503 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+  background: #f2f2f2!important;
+  font-family: 'Poppins-Regular'!important;
+  color: #19284d;
+}
+
+b{
+  font-family: 'Poppins-Bold';
+}
+
+
+/*Para centrar en la página*/
+html{
+   display:grid;
+   height:100%;
+   text-align: center;
+   place-items: center;
+}
+
+
+.content-all{
+	max-width: 1000px;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #19284d;
+    background: #fff;
+    padding: 2%;
+    box-shadow: rgba(84, 91, 98, 0.2) 1px 0px 10px 0px;
+    position: relative;
+}
+
+.cont-mixer{
+    background: #f8fcff;
+}
+
+.encabezado-potentor{
+	width: 100%;
+    height: 50px;
+}
+
+.rounded h4{
+    font-family: 'Gilroy';
+    color: #19284d;
+}
+
+.rounded p{
+    color: #695EE8!important;
+    font-size: 18px;
+}
+
+.row-footer{
+    display: flex;
+    font-size: 14px;
+}
+
+.derechos-reservados{
+    width: 50%;
+}
+
+.contenedor-del-boton-iniciar{
+    width: 50%;
+    text-align: right;
+    position: relative;
+}
+
+.cdbi-txt{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    background: #695EE8;
+    color: #fff;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 0.1rem;
+}
+
+
+[data-toggle="collapse"] .fa:before {
+  content: "\f054";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f078";
+}
+
+.card-header{
+    color: white!important;
+}
+
+.card-header button{
+    color: white!important;
+
+}
+
+.intelectuales{
+   background: #3782C6!important;
+}
+.socioemocionales{
+   background: #ED396A!important;   
+}
+.destudio{
+   background: #f6941c!important;
+}
+.deejecucion{
+   background: #966ba5!important;
+}
+.procesamiento{
+   background: #34bda7!important;
+}
+.metacognitivas{
+   background: #fed53c!important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.list-group-item{
+    display: inline-flex!important;
+}
+
+.content-group{
+    width: 50%;
+}
+
+.content-group a{
+    float: right;
+    color: #695EE8;
+
+}
+
+.content-group a i {
+    transition: all 0.3s linear;
+}
+
+.content-group a:hover i {
+    transform: scale(1.1);
+    color: #7c74dc;
+}
+
+.badges{
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    padding: 1%;
+    text-align: center;
+    background: #695EE8;
+    color: white;
+    box-shadow: 0px 5px 5px #7c74dc;
+}
+
+.aviso{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  z-index: 10;
+  top: 0;
+  display: none;
+}
+
+.mensaje-responsivo{
+  margin: 0 auto;
+  background: #695EE8;
+  max-width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+}
+
+.mensaje-responsivo img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*ESTILOS INICIO DEL EVALUADO*/
+
+.intro-potentor{
+    text-align: left;
+}
+
+.intro-potentor span{
+    font-size: 0.8rem;
+}
+
+.left-info{
+    display: flex;
+}
+
+
+.carga-img{
+    width:50%; 
+    padding-left: 45%;
+    text-align: center;
+}
+
+.avance-gral{
+    width: 50%;
+    padding-left: 25%;
+}
+
+#file{
+    display: none;
+}
+
+.circle{
+    display: inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.cont-indicacion{
+    width: 33%;
+    text-align: center;
+}
+
+.cont-indicacion img{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+#cont-perfil{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 56%; 
+    overflow: hidden;     
+    margin-left: 29%; 
+}
+
+.cont-up-down{
+    position: relative;
+}
+
+#down-self{
+    display: none;
+    position: absolute;
+    right: 25%;
+    cursor: pointer;
+}
+
+#down-self b{
+    font-size: 1.2rem!important;
+    color: #c7c8ca!important;
+}
+
+
+
+
+/* CIRCULO DE AVANCE */
+
+.progressArc{
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+.progressArc div{
+z-index:1; 
+} 
+.progressArc svg{
+  background: #fff;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:0; 
+}
+
+
+/*CUADRICULA DATOS*/
+
+.cuadricula{
+    display: flex;
+
+}
+
+.cuadri-contenido{
+    display: flex;
+}
+
+.cuadricula-info{
+    width: 30%;
+    background: #ffff;
+    padding: 1% 1% 0 1%;
+    margin: 1%;
+}
+
+.empty{
+    background: #e6e7e8;
+}
+.txt-info{
+    width: 70%;
+}
+
+.avance-prueba{
+    width: 30%;
+}
+
+.clasi-prueba{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    color: #a5a8ab;
+}
+
+.titulo-prueba{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.timer-time{
+    display: flex;
+}
+
+.timer-time i{
+    color: #b5bfc8;
+    padding-top: 5%;
+}
+
+.nom-ejercicios{
+    color: #b5bfc8; 
+}
+
+.estatus{
+    border-top: 1px solid #a5a8ab;
+    padding: 1%;
+    text-align: center;
+    color: #695de8;
+    cursor: pointer;
+}
+
+.estatuscheck{
+    border-top: 1px solid #a5a8ab;
+    padding: 1%;
+    text-align: center;
+    color: #a5a8ab;
+    cursor: pointer;
+}
+
+.estatus p{
+    margin-bottom: 0;
+}
+
+.vacio-footer{
+    width: 70%;
+}
+.potentor-tip{
+    width: 30%;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid #e6e7e8;
+    background: #fff;
+    padding: 1%;
+}
+
+.tip-icon{
+    padding: 3%;
+    padding-top: 12%;
+    border-right: 1px solid #e6e7e8;
+}
+
+.potentor-tip i{
+    margin-top: 5%;
+    color: #695de8;
+}
+
+.pro-tip{
+    padding-left: 5%;
+}
+
+.pro-tip p{
+    font-size: 0.7rem;
+    color:#a5a8ab;
+    
+}
+
+@media (max-width: 610px){
+
+/*PROPIEDADES GENERALES*/
+   .aviso{
+      display: block;
+   }
+
+   .content-all{
+    display: none;
+   }
+/*FIN PROPIEDADES GENERALES*/
+
+}
+
+
+@media (max-width: 991px) and (min-width: 767px){
+    .carga-img {
+      padding-left: 30%;
+    }
+
+    .avance-gral {
+      padding-left: 10%;
+    }
+
+    .cuadricula-info {
+      width: 46%;
+    }
+
+    .potentor-tip{
+      width: 50%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 610px){
+    .txt-info{
+        width: 85%;
+    }
+
+    .avance-prueba {
+        width: 10%;
+    }
+
+    .carga-img {
+      padding-left: 0%;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+    }
+    .avance-gral {
+    width: 50%;
+    padding-left: 25%;
+}
+
+    .progressArc {
+      height: 70px;
+      width: 70px;
+    }
+    
+    .cuadricula-info {
+      width: 98%;
+    }
+
+    .potentor-tip{
+      width: 100%;
+    }
+}
+
