@@ -33,7 +33,7 @@
 
            <div>
                 <div class="row">
-                  <div class="col-md-6 col-8 intro-potentor">
+                  <div class="col-md-8 col-8 intro-potentor">
                        <div>
                            <h5>¡Hola <b>Andrea</b>, Bienvenido@ a Potentor!</h5>
                            <span>
@@ -42,7 +42,7 @@
                            </span>
                        </div>
                   </div>
-                  <div class="col-md-6 col-4 left-info">
+                  <div class="col-md-4 col-4 left-info">
                        
                        <div class="carga-img">
                             <span id="saludo">
@@ -180,6 +180,24 @@
             </div>
            </footer>
       </div>
+
+      <script type="text/javascript">
+          function mostrar(){
+             var archivo = document.getElementById("file").files[0];
+             var reader = new FileReader();
+             if (file) {
+               reader.readAsDataURL(archivo );
+               reader.onloadend = function () {
+                 document.getElementById("img").src = reader.result;
+                 document.getElementById("cont-perfil").style.display = "block";
+                 document.getElementById("saludo").style.display = "none";
+                 document.getElementById("up-self").style.display = "none";
+                 // document.getElementById("down-self").style.display = "block";
+           
+               }
+             }
+           }
+      </script>
 
 
       <script>
