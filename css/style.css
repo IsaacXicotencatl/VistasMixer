@@ -36,14 +36,6 @@ b{
 }
 
 
-/*Para centrar en la página*/
-html{
-   display:grid;
-   height:100%;
-   text-align: center;
-   place-items: center;
-}
-
 
 .content-all{
 	max-width: 1000px;
@@ -454,11 +446,11 @@ z-index:1;
 
 @media (max-width: 991px) and (min-width: 767px){
     .carga-img {
-      padding-left: 30%;
+      padding-left: 0%;
     }
 
     .avance-gral {
-      padding-left: 10%;
+      padding-left: 2%;
     }
 
     .cuadricula-info {
@@ -488,13 +480,12 @@ z-index:1;
       height: 50px;
     }
     .avance-gral {
-    width: 50%;
-    padding-left: 25%;
-}
+      padding-left: 5%;
+    }
 
     .progressArc {
-      height: 70px;
-      width: 70px;
+      height: 60px;
+      width: 60px;
     }
     
     .cuadricula-info {
