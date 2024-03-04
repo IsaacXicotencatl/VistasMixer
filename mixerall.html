@@ -42,36 +42,101 @@
                      <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                        Habilidades intelectuales 
                      </button> 
-                     <button id="Habilidades Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="cargaPruebas(this.id)">Seleccionar Índice</button>
+                     <button id="Habilidades_Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                   </div>
                   <div>
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Habilidades Intelectuales</p></div>
+                                     <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
                                      <div class="content-group-timer">
                                         <a>15&nbsp;<i class="fas fa-clock"></i></a>
                                      </div>
                                  </li>
                                  <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Pensamiento Crítico y Analítico</p></div>
+                                     <div class="content-group-txt" data-parent=""><p>Analogías Simbólicas</p></div>
                                      <div class="content-group-timer">
                                         <a>15&nbsp;<i class="fas fa-clock"></i></a>
                                      </div>
                                  </li>
                                  <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Pensamiento Creativo</p></div>
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Razonamiento Lógico</p></div>
                                      <div class="content-group-timer">
                                         <a>15&nbsp;<i class="fas fa-clock"></i></a>
                                      </div>
                                  </li>
                                  <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Memoria a Corto Plazo</p></div>
+                                     <div class="content-group-txt" data-parent=""><p>Aplicación de Hechos</p></div>
                                      <div class="content-group-timer">
                                         <a>15&nbsp;<i class="fas fa-clock"></i></a>
                                      </div>
                                  </li>
-                                
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Juicio de Conceptos</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Orientación</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Análisis de Hechos</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Conceptualización de Hechos</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Discriminación</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Planeación</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Progresión Númerica</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Clasificación</p></div>
+                                     <div class="content-group-timer">
+                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
+                                     </div>
+                                 </li>
                              </ul>
                         </div>
                       </div>   
@@ -267,17 +332,24 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+           <button type="button" class="btn btn-close" data-dismiss="modal"><p><i class='far fa-window-close fa-2x'></i></p></button>
       </div>
       <div class="modal-body">
-        ...
+         <div class="listado_habilidades">
+           <ul id="list_habil">
+               <li onclick="cargaPruebas(this.id)" id="aprendizaje">Habilidades de aprendizaje</li>
+               <li onclick="cargaPruebas(this.id)" id="verbales">Habilidades Verbales</li>
+               <li onclick="cargaPruebas(this.id)" id="razonamiento">Habilidades de razonamiento</li>
+               <li onclick="cargaPruebas(this.id)" id="decisiones">Habilidades de toma de decisiones</li>
+               <li onclick="cargaPruebas(this.id)" id="planeacion">Habilidades de planeacion</li>
+               <li onclick="cargaPruebas(this.id)" id="lectura">Habilidades de lectura</li>
+               <li onclick="cargaPruebas(this.id)" id="matematicas">Habilidades Matemáticas</li>
+           </ul>
+         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn-guardar" onclick="limpiarListado()">Limpiar listado</button>
+        <button type="button" class="btn-guardar">Guardar cambios</button>
       </div>
     </div>
   </div>
@@ -287,8 +359,18 @@
 
       <script type="text/javascript">
           function cargaPruebas (clicked_id) {
-             alert(clicked_id);
-           }
+               var x = document.getElementById(clicked_id);
+                 x.classList.toggle("checado");
+          }
+
+          function limpiarListado(){
+               
+               var listado = document.getElementsByClassName("checado");
+               for (var i = 0; i<listado.length; i++) {
+                  listado[i].classList.remove("checado");
+    
+               }
+          }
       </script>
 
       <script>
