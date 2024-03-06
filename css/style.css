@@ -336,8 +336,6 @@ b{
 }
 
 
-
-
 /* CIRCULO DE AVANCE */
 
 .progressArc{
@@ -362,6 +360,174 @@ z-index:1;
   top: 0;
   left: 0;
   z-index:0; 
+}
+
+
+/*CREAR MIXER*/
+.crearMix-content{
+display: flex;
+}
+.cM-form{
+width: 60%;      
+}
+.cM-form form{
+display: flex;
+padding: 1%;
+}
+.inputs-group{
+width: 70%;
+}
+.inputs-group input:focus, .inputs-group select:focus {
+    outline: none !important;
+    border:1px solid #695EE8;
+    box-shadow: 0 0 10px #695EE8;
+  }
+.btns-group{
+width: 30%;
+display: inline-grid;
+align-content: space-evenly;
+justify-content: space-around;
+padding-top: 5%;
+}
+.cM-datosGral{
+width: 40%;
+}
+.tiempoTotal{
+background: #fff;
+margin: 0% 3.4%;
+}
+.tiempoTotal p{
+text-align: center;
+margin-bottom: 0.5%;
+}
+.cM-data{
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+}
+.cM-total{
+background: #fff;
+width: 45%;
+height: auto;
+}
+.cM-total p{
+margin-bottom: 0;
+border-bottom: 1px solid #4e57be;
+}
+.hovicon {
+display: inline-block;
+font-size: 45px;
+line-height: 90px;
+margin: 20px;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+text-align: center;
+position: relative;
+text-decoration: none;
+z-index: 1;
+cursor: not-allowed;
+}
+.hovicon:after {
+pointer-events: none;
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+content:'';
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+.hovicon:before {
+speak: none;
+font-size: 48px;
+line-height: 90px;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+display: block;
+-webkit-font-smoothing: antialiased;
+}
+/* Effect 8 */
+.hovicon.effect-8 {
+background: rgba(105, 94, 232, 0.1);
+-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-8:after {
+top: 0;
+left: 0;
+padding: 0;
+z-index: -1;
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1);
+opacity: 0;
+-webkit-transform: scale(0.9);
+-moz-transform: scale(0.9);
+-ms-transform: scale(0.9);
+transform: scale(0.9);
+}
+.hovicon.effect-8:hover {
+background: rgba(105, 94, 232, 0.05);
+-webkit-transform: scale(0.93);
+-moz-transform: scale(0.93);
+-ms-transform: scale(0.93);
+transform: scale(0.93);
+color: #000;
+}
+.hovicon.effect-8:hover i {
+color: #000;
+}
+.hovicon.effect-8:hover:after {
+-webkit-animation: sonarEffect 1.3s ease-out 75ms;
+-moz-animation: sonarEffect 1.3s ease-out 75ms;
+animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+0% {
+opacity: 0.3;
+}
+40% {
+opacity: 0.5;
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+}
+100% {
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+-webkit-transform: scale(1.5);
+opacity: 0;
+}
+}
+@-moz-keyframes sonarEffect {
+0% {
+opacity: 0.3;
+}
+40% {
+opacity: 0.5;
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+}
+100% {
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+-moz-transform: scale(1.5);
+opacity: 0;
+}
+}
+@keyframes sonarEffect {
+0% {
+opacity: 0.3;
+}
+40% {
+opacity: 0.5;
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+}
+100% {
+box-shadow: 0 0 0 2px rgba(105, 94, 232, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(105, 94, 232, 0.5);
+transform: scale(1.5);
+opacity: 0;
+}
 }
 
 
@@ -569,6 +735,16 @@ z-index:1;
     .potentor-tip{
       width: 50%;
     }
+
+    .crearMix-content {
+      display: inline-grid;
+      width: 100%;
+    }
+
+    .cM-form,.cM-datosGral{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 610px){
@@ -603,6 +779,21 @@ z-index:1;
 
     .potentor-tip{
       width: 100%;
+    }
+
+
+    .crearMix-content {
+      display: inline-grid;
+      width: 100%;
+    }
+
+    .cM-form,.cM-datosGral{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn-cM{
+        width: 100px;
     }
 }
 
