@@ -196,6 +196,10 @@ b{
     width: 80%;
 }
 
+.content-group-txt p{
+    margin-bottom: 0;
+}
+
 .content-group-timer{
     width: 20%;
     text-align: right;

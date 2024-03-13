@@ -31,10 +31,376 @@
                </div>
            </header>
 
-           <div>
-       
+           <div class="datosAlumno">
+                     <div class="dA-img">
+                         <img src="img/perfil.png" style="width: 100px;">
+                     </div>
+                     <div class="dA-txt">
+                         <p id="nombre">Mariana Mandarina Mandalead</p>
+                         <p id="grupo">Grupo : <b>3-A</b></p>
+                         <p id="grado">Grado :  <b>Tercero</b></p>
+                         <p id="ciclo">Ciclo Escolar: <b>24-25</b></p>
+                     </div>
+                     <div class="semaforo">
+                          <span>Fecha de aplicación : 22/02/2024</span>
+                           <div class="colorSemaforo">
+                              <div class="rojo"></div>
+                              <p>Bajos</p>
+                           </div>
+                           <div class="colorSemaforo">
+                              <div class="amarillo"></div>
+                              <p>Promedio</p>
+                           </div>
+                           <div class="colorSemaforo">
+                              <div class="verde"></div>
+                              <p>Altos</p>
+                           </div>
+                          
+                     </div>
            </div>
-          
+
+           <div class="tabla-principal">
+                <div class="menu-tabla">
+                     <div class="menu-tabla-opcion mto-title-active" id="mto-puntaje">
+                        <span>Por Puntaje</span>
+                     </div>
+                     <label class="switch">
+                        <input id="accept" type="checkbox" onclick="Changestatus()">
+                        <span class="slider round"></span>
+                     </label>
+                     <div class="menu-tabla-opcion" id="mto-prueba">
+                        <span>Por Prueba Psicométrica</span>
+                     </div>
+                </div>
+
+                <div id="prueba" style="display:none">
+                  <div class="porPrueba">
+                     <div class="card card-porPrueba">
+                          <div class="card-header-PorPrueba intelectuales">
+                             <span>Habilidades intelectuales</span> 
+                          </div>
+                          <div>
+                            <div class="card-body">
+                             <ul class="list-group list-group-flush habi_intelec">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 
+                             </ul>
+                            </div>
+                          </div>   
+                     </div>
+                  </div>
+                </div>
+
+                <div id="puntaje">
+                  <div class="porPuntaje">
+                     <div class="PuntajeStats" id="alto">
+                          <span class="titlePuntaje">Habilidades Altas</span>
+
+                          <div class="card card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectuales">
+                                  <span>Habilidades intelectuales</span> 
+                               </div>
+                               <div>
+                                  <div class="card-body">
+                                       <ul class="list-group list-group-flush habi_intelec">
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
+                                               <div class="calif-porPrueba verde">
+                                                   <p>78</p>
+                                               </div>
+                                           </li>
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
+                                               <div class="calif-porPrueba verde">
+                                                   <p>78</p>
+                                               </div>
+                                           </li>
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
+                                               <div class="calif-porPrueba verde">
+                                                   <p>78</p>
+                                               </div>
+                                           </li>
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
+                                               <div class="calif-porPrueba verde">
+                                                   <p>78</p>
+                                               </div>
+                                           </li>
+                                       </ul>
+                                  </div>
+                               </div>   
+                          </div>
+                     </div>
+                     <div class="PuntajeStats" id="Promedio">
+                          <span class="titlePuntaje">Habilidades Promedio</span>
+                          <div class="card card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectuales">
+                                  <span>Habilidades intelectuales</span> 
+                               </div>
+                               <div>
+                                  <div class="card-body">
+                                       <ul class="list-group list-group-flush habi_intelec">
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent=""><p>Sentido de la vida</p></div>
+                                               <div class="calif-porPrueba amarillo">
+                                                   <p>45</p>
+                                               </div>
+                                           </li>
+                                          
+                                           </li>
+                                       </ul>
+                                  </div>
+                               </div>   
+                          </div>
+                     </div>
+                     <div class="PuntajeStats" id="bajo">
+                          <span class="titlePuntaje">Habilidades Bajas</span>
+                          <div class="card card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectuales">
+                                  <span>Habilidades intelectuales</span> 
+                               </div>
+                               <div>
+                                  <div class="card-body">
+                                       <ul class="list-group list-group-flush habi_intelec">
+                                           <li class="list-group-item">
+                                               <div class="content-group-txt" data-parent=""><p>Sentido de la vida</p></div>
+                                               <div class="calif-porPrueba rojo">
+                                                   <p>2</p>
+                                               </div>
+                                           </li>
+                                          
+                                           </li>
+                                       </ul>
+                                  </div>
+                               </div>   
+                          </div>
+                     </div>
+                  </div>
+                </div>
+                
+           </div>
+
+           <style type="text/css">
+                 .datosAlumno{
+                    display: flex;
+                    padding: 1%;
+                    position: relative;
+                    background: #fff;
+                 }
+
+                 .dA-txt p{
+                    margin-bottom: 0;
+                 }
+                 .semaforo{
+                    position: absolute;
+                    right: 5%;
+                    width: 30%;
+                    background: #f8fcff;
+                 }
+
+                 .semaforo span{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 5%;
+                 }
+
+                 .colorSemaforo{
+                    float: left;
+                    width: 33%;
+                 }
+                 .colorSemaforo div{
+                    
+                    float: left;
+                    margin-right: 5%;
+                 }
+
+                 .colorSemaforo p{
+                     margin: 0;
+                 }
+
+                 .rojo{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 15px;
+                    background: #ed476e;
+                    color: #fff;
+                    text-align: center;
+                 }
+
+                 .amarillo{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 15px;
+                    background: #f49800;
+                    color: #fff;
+                    text-align: center;
+ 
+                 }
+
+                 .verde{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 15px;
+                    background: #6fcc4c;
+                    margin-left: 30%;
+                    color: #fff;
+                    text-align: center;
+                 }
+
+                 /* The switch - the box around the slider */
+
+.menu-tabla{
+   display: flex;
+   margin: 1% 0.5;
+}
+
+.menu-tabla-opcion{
+   padding-top: 0.2%;
+   margin-right: 0.5%;
+   margin-left: 0.5%;
+}
+
+.mto-title-active{
+   color: #695EE8;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ece6f5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #695EE8;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.card-porPrueba{
+   width: 30%;
+}
+
+.card-header-PorPrueba {
+   color: white;
+   padding: 5%;
+}
+
+.calif-porPrueba{
+   width: 30px;
+   font-size: 0.8rem;
+   padding-top: 1.2%;
+}
+
+.calif-porPrueba p{
+   margin-bottom: 0;
+}
+
+
+
+.porPuntaje{
+   display: flex;
+   width: 100%;
+}
+
+.PuntajeStats{
+   width: 30%;
+   text-align: center;
+   margin: 0 auto;
+
+}
+
+#alto .titlePuntaje{
+   color: #6fcc4c;
+   text-align: center; 
+}
+
+#promedio .titlePuntaje{
+   color: #f49800;
+   text-align: center;
+}
+
+#bajo .titlePuntaje{
+   color: #ed476e;
+   text-align: center;
+}
+
+           </style>
        
            <footer>
             
@@ -43,4 +409,22 @@
 
 
    </body>
+
+   <script type="text/javascript">
+      function Changestatus() {
+         cb = document.querySelector('#accept');
+         if (cb.checked){
+             document.querySelector('#prueba').style.display = "block";
+             document.querySelector('#puntaje').style.display = "none";
+             document.querySelector('#mto-prueba').classList.add("mto-title-active");
+             document.querySelector('#mto-puntaje').classList.remove("mto-title-active");
+
+         }else{
+             document.querySelector('#puntaje').style.display = "block";
+             document.querySelector('#prueba').style.display = "none";
+             document.querySelector('#mto-prueba').classList.remove("mto-title-active");
+             document.querySelector('#mto-puntaje').classList.add("mto-title-active");
+         }
+      }
+   </script>
 </html>
