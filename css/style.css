@@ -385,7 +385,7 @@ width: 70%;
     outline: none !important;
     border:1px solid #695EE8;
     box-shadow: 0 0 10px #695EE8;
-  }
+}
 .btns-group{
 width: 30%;
 display: inline-grid;
@@ -708,6 +708,173 @@ opacity: 0;
 }
 /*MODAL STYLES*/
 
+
+
+/*STYLES EVALUADO*/
+
+.datosAlumno{
+display: flex;
+padding: 1%;
+position: relative;
+background: #fff;
+}
+.dA-txt p{
+margin-bottom: 0;
+}
+.semaforo{
+position: absolute;
+right: 5%;
+width: 30%;
+background: #f8fcff;
+}
+.semaforo span{
+width: 100%;
+display: block;
+text-align: center;
+margin-bottom: 5%;
+}
+.colorSemaforo{
+float: left;
+width: 33%;
+}
+.colorSemaforo div{
+float: left;
+margin-right: 5%;
+}
+.colorSemaforo p{
+margin: 0;
+}
+.rojo{
+width: 25px;
+height: 25px;
+border-radius: 15px;
+background: #ed476e;
+color: #fff;
+text-align: center;
+}
+.amarillo{
+width: 25px;
+height: 25px;
+border-radius: 15px;
+background: #f49800;
+color: #fff;
+text-align: center;
+}
+.verde{
+width: 25px;
+height: 25px;
+border-radius: 15px;
+background: #6fcc4c;
+margin-left: 30%;
+color: #fff;
+text-align: center;
+}
+/* The switch - the box around the slider */
+.menu-tabla{
+display: flex;
+margin: 1% 0.5;
+}
+.menu-tabla-opcion{
+padding-top: 0.2%;
+margin-right: 0.5%;
+margin-left: 0.5%;
+}
+.mto-title-active{
+color: #695EE8;
+}
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 25px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ece6f5;
+-webkit-transition: .4s;
+transition: .4s;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 4px;
+bottom: 3px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+input:checked + .slider {
+background-color: #695EE8;
+}
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
+.card-porPrueba{
+width: 30%;
+}
+.card-header-PorPrueba {
+color: white;
+padding: 5%;
+}
+.calif-porPrueba{
+width: 30px;
+font-size: 0.8rem;
+padding-top: 1.2%;
+}
+.calif-porPrueba p{
+margin-bottom: 0;
+}
+.porPuntaje{
+display: flex;
+width: 100%;
+}
+.PuntajeStats{
+width: 30%;
+text-align: center;
+margin: 0 auto;
+}
+#alto .titlePuntaje{
+color: #6fcc4c;
+text-align: center; 
+}
+#promedio .titlePuntaje{
+color: #f49800;
+text-align: center;
+}
+#bajo .titlePuntaje{
+color: #ed476e;
+text-align: center;
+}
+
+/*STYLES EVALUADO*/
+
 @media (max-width: 610px){
 
 /*PROPIEDADES GENERALES*/
@@ -749,6 +916,52 @@ opacity: 0;
         width: 100%;
         margin: 0 auto;
     }
+
+        /*Styles Evaluado*/
+    .semaforo {
+        right: -1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .colorSemaforo {
+        width: 20%;
+    }
+
+    .colorSemaforo p {
+        display: none;
+    }
+
+    .verde {
+        margin-left: 0;
+    }
+
+    .menu-tabla {
+        margin: 2% 0.5;
+    }
+
+    .porPuntaje {
+        flex-direction: column;
+    }
+
+    .PuntajeStats {
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .porPrueba{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-porPrueba {
+        width: 80%;
+    }
+
+    
+
+
 }
 
 @media (max-width: 767px) and (min-width: 610px){
@@ -799,5 +1012,48 @@ opacity: 0;
     .btn-cM{
         width: 100px;
     }
+
+    /*Styles Evaluado*/
+    .semaforo {
+        right: -1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .colorSemaforo {
+        width: 20%;
+    }
+
+    .colorSemaforo p {
+        display: none;
+    }
+
+    .verde {
+        margin-left: 0;
+    }
+
+    .menu-tabla {
+        margin: 2% 0.5;
+    }
+
+    .porPuntaje {
+        flex-direction: column;
+    }
+
+    .PuntajeStats {
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .porPrueba{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-porPrueba {
+        width: 80%;
+    }
+
 }
 
