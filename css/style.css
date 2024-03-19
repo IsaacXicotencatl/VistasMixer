@@ -29,37 +29,36 @@ body{
   background: #f2f2f2!important;
   font-family: 'Poppins-Regular'!important;
   color: #19284d;
+  font-size: 12px!important;  
 }
 
 b{
   font-family: 'Poppins-Bold';
 }
 
-
-
 .content-all{
 	max-width: 1000px;
     display: block;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     color: #19284d;
-    background: #fff;
-    padding: 2%;
+    background: #f8fcff;
+    padding: 2% 0%!important;
     box-shadow: rgba(84, 91, 98, 0.2) 1px 0px 10px 0px;
     position: relative;
 }
 
 .cont-mixer{
-    background: #f8fcff;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
 }
 
 .encabezado-potentor{
 	width: 100%;
     height: 50px;
+    padding: 0 2%;
 }
 
 .rounded h4{
@@ -74,7 +73,7 @@ b{
 
 .row-footer{
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .derechos-reservados{
@@ -96,7 +95,7 @@ b{
     background: #695EE8;
     color: #fff;
     font-family: 'Poppins-Regular', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -125,12 +124,6 @@ b{
     color: white!important;
     padding: 0.25rem!important;
 }
-
-.card-header button{
-    color: white!important;
-
-}
-
 .btn{
     padding: 0.5rem!important;
 }
@@ -154,25 +147,78 @@ b{
 
 .card-body{
     padding: 0.25rem!important;
+    border: 1px solid #dce2e7!important;
+}
+
+.list-group-item{
+    border: none!important;
 }
 
 .intelectuales{
-   background: #3782C6!important;
+   background: #3782C6;
+   color: white;
+   padding: 0.25rem;
 }
 .socioemocionales{
-   background: #ED396A!important;   
+   background: #ED396A;
+   color: white;
+   padding: 0.25rem;   
 }
 .destudio{
-   background: #f6941c!important;
+   background: #f6941c;
+   color: white;
+   padding: 0.25rem;
 }
 .deejecucion{
-   background: #966ba5!important;
+   background: #966ba5;
+   color: white;
+   padding: 0.25rem;
 }
 .procesamiento{
-   background: #34bda7!important;
+   background: #34bda7;
+   color: white;
+   padding: 0.25rem;
 }
 .metacognitivas{
-   background: #fed53c!important;
+   background: #fed53c;
+   color: white;
+   padding: 0.25rem;
+}
+
+.metacognitivas button,
+.intelectuales button,
+.socioemocionales button,
+.destudio button,
+.deejecucion button,
+.procesamiento button{
+    color: white;
+
+}
+
+
+.intelectualesStats{
+   border-bottom:2px solid #3782C6;
+   color: #3782C6!important;
+}
+.socioemocionalesStats{
+   border-bottom:2px solid #ED396A;
+   color: #ED396A!important;   
+}
+.destudioStats{
+   border-bottom:2px solid #f6941c;
+   color: #f6941c!important;
+}
+.deejecucionStats{
+   border-bottom:2px solid #966ba5;
+   color: #966ba5!important;
+}
+.procesamientoStats{
+   border-bottom:2px solid #34bda7;
+   color: #34bda7!important;
+}
+.metacognitivasStats{
+   border-bottom:2px solid #fed53c;
+   color: #fed53c!important;
 }
 
 .btn.focus, .btn:focus {
@@ -711,21 +757,32 @@ opacity: 0;
 
 
 /*STYLES EVALUADO*/
-
+.titleVista{
+background: #eceff2;
+text-align: center;
+padding: 0.5%;
+}
+.titleVista p{
+margin-bottom: 0;
+}
 .datosAlumno{
 display: flex;
-padding: 1%;
+padding: 1% 5%;
 position: relative;
 background: #fff;
+border-bottom: 1px solid #dce2e7;
+}
+.dA-txt{
+padding-top: 1.2%;
 }
 .dA-txt p{
 margin-bottom: 0;
 }
 .semaforo{
 position: absolute;
-right: 5%;
+right: 0;
 width: 30%;
-background: #f8fcff;
+padding-top: 1.2%;
 }
 .semaforo span{
 width: 100%;
@@ -742,6 +799,7 @@ float: left;
 margin-right: 5%;
 }
 .colorSemaforo p{
+padding-top: 2.5%;
 margin: 0;
 }
 .rojo{
@@ -765,7 +823,6 @@ width: 25px;
 height: 25px;
 border-radius: 15px;
 background: #6fcc4c;
-margin-left: 30%;
 color: #fff;
 text-align: center;
 }
@@ -773,6 +830,8 @@ text-align: center;
 .menu-tabla{
 display: flex;
 margin: 1% 0.5;
+border-bottom: 1px solid #dce2e7;
+padding: 0.5% 8%;
 }
 .menu-tabla-opcion{
 padding-top: 0.2%;
@@ -803,7 +862,8 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-color: #ece6f5;
+background-color: #fff;
+border: 2px solid #dce2e7;
 -webkit-transition: .4s;
 transition: .4s;
 }
@@ -813,13 +873,14 @@ content: "";
 height: 20px;
 width: 20px;
 left: 4px;
-bottom: 3px;
-background-color: white;
+bottom: 2%;
+background-color: #ece6f5;
+border: 4px solid #695EE8;
 -webkit-transition: .4s;
 transition: .4s;
 }
 input:checked + .slider {
-background-color: #695EE8;
+border: 2px solid #ece6f5;
 }
 input:focus + .slider {
 box-shadow: 0 0 1px #2196F3;
@@ -836,8 +897,15 @@ border-radius: 34px;
 .slider.round:before {
 border-radius: 50%;
 }
+
+.porPrueba{
+display: flex;
+width: 100%;
+padding: 0 9%;
+}
 .card-porPrueba{
 width: 30%;
+margin: 0 auto;
 }
 .card-header-PorPrueba {
 color: white;
@@ -847,6 +915,8 @@ padding: 5%;
 width: 30px;
 font-size: 0.8rem;
 padding-top: 1.2%;
+position: absolute;
+right: 2%;
 }
 .calif-porPrueba p{
 margin-bottom: 0;
@@ -854,10 +924,10 @@ margin-bottom: 0;
 .porPuntaje{
 display: flex;
 width: 100%;
+padding: 0 7.8%;
 }
 .PuntajeStats{
 width: 30%;
-text-align: center;
 margin: 0 auto;
 }
 #alto .titlePuntaje{

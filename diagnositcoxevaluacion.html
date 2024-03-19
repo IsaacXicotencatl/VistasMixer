@@ -21,7 +21,7 @@
            </div>
       </div>
 
-      <div class="container content-all cont-mixer">
+      <div class="container content-all">
            <header class="encabezado-potentor">
                <div class="row">
                   <div class="col-md-2 col-4 logo-potentor">
@@ -30,6 +30,10 @@
                   <div class="col-md-10 col-8"></div>                  
                </div>
            </header>
+
+           <div class="titleVista">
+                <span><p>Skill Map</p></span>
+           </div>
 
            <div class="datosAlumno">
                      <div class="dA-img">
@@ -44,18 +48,17 @@
                      <div class="semaforo">
                           <span>Fecha de aplicación : 22/02/2024</span>
                            <div class="colorSemaforo">
-                              <div class="rojo"></div>
-                              <p>Bajos</p>
+                              <div class="verde"></div>
+                              <p>Altos</p>
                            </div>
                            <div class="colorSemaforo">
                               <div class="amarillo"></div>
                               <p>Promedio</p>
                            </div>
                            <div class="colorSemaforo">
-                              <div class="verde"></div>
-                              <p>Altos</p>
+                              <div class="rojo"></div>
+                              <p>Bajos</p>
                            </div>
-                          
                      </div>
            </div>
 
@@ -75,8 +78,8 @@
 
                 <div id="prueba" style="display:none">
                   <div class="porPrueba">
-                     <div class="card card-porPrueba">
-                          <div class="card-header-PorPrueba intelectuales">
+                     <div class="card-porPrueba">
+                          <div class="card-header-PorPrueba intelectualesStats">
                              <span>Habilidades intelectuales</span> 
                           </div>
                           <div>
@@ -111,16 +114,90 @@
                             </div>
                           </div>   
                      </div>
+
+                     <div class="card-porPrueba">
+                          <div class="card-header-PorPrueba deejecucionStats">
+                             <span>Habilidades de Ejecución</span> 
+                          </div>
+                          <div>
+                            <div class="card-body">
+                             <ul class="list-group list-group-flush habi_intelec">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
+                                     <div class="calif-porPrueba rojo">
+                                         <p>7</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
+                                     <div class="calif-porPrueba amarillo">
+                                         <p>58</p>
+                                     </div>
+                                 </li>
+                                 
+                             </ul>
+                            </div>
+                          </div>   
+                     </div>
+
+                     <div class="card-porPrueba">
+                          <div class="card-header-PorPrueba metacognitivasStats">
+                             <span>Habilidades Metacognitivas</span> 
+                          </div>
+                          <div>
+                            <div class="card-body">
+                             <ul class="list-group list-group-flush habi_intelec">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
+                                     <div class="calif-porPrueba rojo">
+                                         <p>7</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
+                                     <div class="calif-porPrueba verde">
+                                         <p>78</p>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
+                                     <div class="calif-porPrueba amarillo">
+                                         <p>58</p>
+                                     </div>
+                                 </li>
+                                 
+                             </ul>
+                            </div>
+                          </div>   
+                     </div>
                   </div>
                 </div>
 
                 <div id="puntaje">
                   <div class="porPuntaje">
                      <div class="PuntajeStats" id="alto">
-                          <span class="titlePuntaje">Habilidades Altas</span>
+                          <span class="titlePuntaje"><p>Habilidades Altas</p></span>
 
-                          <div class="card card-porPuntaje">
-                               <div class="card-header-PorPrueba intelectuales">
+                          <div class="card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectualesStats">
                                   <span>Habilidades intelectuales</span> 
                                </div>
                                <div>
@@ -156,9 +233,9 @@
                           </div>
                      </div>
                      <div class="PuntajeStats" id="Promedio">
-                          <span class="titlePuntaje">Habilidades Promedio</span>
-                          <div class="card card-porPuntaje">
-                               <div class="card-header-PorPrueba intelectuales">
+                          <span class="titlePuntaje"><p>Habilidades Promedio</p></span>
+                          <div class="card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectualesStats">
                                   <span>Habilidades intelectuales</span> 
                                </div>
                                <div>
@@ -178,9 +255,9 @@
                           </div>
                      </div>
                      <div class="PuntajeStats" id="bajo">
-                          <span class="titlePuntaje">Habilidades Bajas</span>
-                          <div class="card card-porPuntaje">
-                               <div class="card-header-PorPrueba intelectuales">
+                          <span class="titlePuntaje"><p>Habilidades Bajas</p></span>
+                          <div class="card-porPuntaje">
+                               <div class="card-header-PorPrueba intelectualesStats">
                                   <span>Habilidades intelectuales</span> 
                                </div>
                                <div>
