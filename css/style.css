@@ -39,7 +39,7 @@ b{
 i[title]:hover::after {
   content: attr(title);
   position: absolute;
-  width: 100%;
+  top: 0;
   background: #fff;
   font-family: 'Poppins-Regular'!important;
   font-size: 10px;
@@ -1070,6 +1070,10 @@ text-align: center;
     margin: 0 auto;
 }
 
+.infoInterp iframe{
+    margin-bottom: 2%;
+}
+
 .califInterp{
     width: 30px;
     font-size: 0.8rem;
@@ -1080,10 +1084,19 @@ text-align: center;
 
 .titleInfoInterp{   
     font-size: 14px;
+    display: flex;
+    padding-top: 1.5%;
+    position: relative;
 
 }
 .titleInfoInterp p{
     padding-top: 2%;
+}
+
+.titleInfoInterp i{
+    font-size: 16px;
+    margin-left: 1%;
+    padding-top: 3%;
 }
 
 .txtInfonInterp{
