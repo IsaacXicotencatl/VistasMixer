@@ -36,6 +36,25 @@ b{
   font-family: 'Poppins-Bold';
 }
 
+i[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  font-family: 'Poppins-Regular'!important;
+  font-size: 10px;
+  color: #19284d;
+  border: 1px solid #dce2e7;
+  box-shadow: rgba(105, 94, 232, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+  padding: 2%;
+  z-index: 10;
+}
+
+.fa-info-circle{
+    color: rgb(105 94 232 / 50%);
+}
+
 .content-all{
 	max-width: 1000px;
     display: block;
@@ -76,6 +95,15 @@ b{
     font-size: 12px;
 }
 
+.foo-ter{
+    background: #fff;
+    
+}
+
+.rf-diagnostico{
+    margin: 0 5%;
+}
+
 .derechos-reservados{
     width: 50%;
 }
@@ -84,6 +112,24 @@ b{
     width: 50%;
     text-align: right;
     position: relative;
+}
+
+.cont-btnPrints{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.downloadPDF{
+    border:1px solid #dce2e7;
+    border-radius: 5px;
+}
+
+.downloadPDF:hover{
+    border: 1px solid #695EE8;
+}
+
+.downloadPDF button:hover{
+    color: #695EE8;    
 }
 
 .cdbi-txt{
@@ -106,9 +152,22 @@ b{
     padding: 0.1rem;
 }
 
-.cdbi-txt a:hover{
+.cdbi-txt button{
+    color: #fff;
+}
+
+.cdbi-txt a:hover, .cdbi-txt:hover{
     text-decoration: none;
     background: #7369e7;
+}
+
+.cdbi-txt button:hover{
+    color: #fff;
+}
+
+.btn-enviar{
+    float: right;
+    margin-top: 2%;
 }
 
 
@@ -766,6 +825,7 @@ padding: 0.5%;
 margin-bottom: 0;
 }
 .datosAlumno{
+width: 100%;
 display: flex;
 padding: 1% 5%;
 position: relative;
@@ -829,9 +889,10 @@ text-align: center;
 /* The switch - the box around the slider */
 .menu-tabla{
 display: flex;
-margin: 1% 0.5;
+margin: 1% 0.5 0;
 border-bottom: 1px solid #dce2e7;
 padding: 0.5% 8%;
+background: #f8fcff;
 }
 .menu-tabla-opcion{
 padding-top: 0.2%;
@@ -840,6 +901,9 @@ margin-left: 0.5%;
 }
 .mto-title-active{
 color: #695EE8;
+}
+.OpcTabalas{
+padding-bottom: 3%;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -930,6 +994,10 @@ padding: 0 7.8%;
 width: 30%;
 margin: 0 auto;
 }
+.titlePuntaje{
+width: 100%;
+padding: 1%;
+}
 #alto .titlePuntaje{
 color: #6fcc4c;
 text-align: center; 
@@ -944,6 +1012,106 @@ text-align: center;
 }
 
 /*STYLES EVALUADO*/
+
+
+/*STYLES MENU GENERAL*/
+
+.menuGeneral{
+    width: 100%;
+    
+}
+
+.menuGeneral ul{
+    float: right;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.menuGeneral ul li{
+    float: left;
+    width: 30%;
+    background: #f9f9f9;
+    padding: 2% 1%;
+    border: 1px solid #dce2e7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.mG-active{
+    background: #fff!important;
+    border: 1px solid #695EE8!important;
+    border-bottom: 0!important;
+    color: #695EE8;
+}
+
+.vistasGrales{
+    background: #fff;
+}
+/*STYLES MENU GENERAL*/
+
+
+
+/*TYLES INTERPRETACION*/
+
+.contInfoInterp{
+    display: flex;
+    padding: 3% 7.8%;
+}
+
+.infoInterp{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.califInterp{
+    width: 30px;
+    font-size: 0.8rem;
+    padding-top: 0.8%;
+    float: left;
+    margin: 2%;
+}
+
+.titleInfoInterp{   
+    font-size: 14px;
+
+}
+.titleInfoInterp p{
+    padding-top: 2%;
+}
+
+.txtInfonInterp{
+    padding-left: 11%;
+}
+
+.txtInfonInterp ul li::marker {
+  font-size: 150%;
+  color: #695EE8;
+}
+
+.txtInfonInterp ul li p {
+    margin-bottom: 0;
+}
+
+.comentariosInfo{
+    padding: 3% 7.8%;
+    height: 40vh;
+}
+
+textarea::placeholder {
+  opacity: 0.5;
+  color: #ece6f5;
+  font-size: 12px;
+}
+
+
+
 
 @media (max-width: 610px){
 
@@ -1027,6 +1195,27 @@ text-align: center;
 
     .card-porPrueba {
         width: 80%;
+    }
+
+    .porPrueba{
+        flex-direction: column;
+    }
+
+    .card-porPrueba {
+        width: 80%;
+    }
+
+
+    .menuGeneral ul {
+        width: 100%;
+    }
+
+    .menuGeneral ul li {
+        width: 33%;
+    }
+
+    .comentariosInfo {
+        height: 20vh;
     }
 
     
@@ -1117,12 +1306,41 @@ text-align: center;
     }
 
     .porPrueba{
-        display: flex;
-        justify-content: space-around;
+        flex-direction: column;
     }
 
     .card-porPrueba {
         width: 80%;
+    }
+
+
+    .menuGeneral ul {
+        width: 100%;
+    }
+
+    .menuGeneral ul li {
+        width: 33%;
+    }
+
+    .contInfoInterp {
+        flex-direction: column;
+    }
+
+    .infoInterp {
+        width: 80%;
+    }
+
+
+    .comentariosInfo {
+        height: 54vh;
+    }
+
+    .derechos-reservados {
+        width: 0%;
+    }
+
+    .contenedor-del-boton-iniciar {
+        width: 100%;
     }
 
 }

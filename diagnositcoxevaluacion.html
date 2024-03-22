@@ -35,6 +35,15 @@
                 <span><p>Skill Map</p></span>
            </div>
 
+           <div class="menuGeneral">
+                <ul>
+                   <li class="tab mG-active" id="skillMap">Skill Map</li>
+                   <li class="tab" id="interp">Interpretación</li>
+                   <li class="tab" id="IdeasEstrat">Ideas Estratégicas</li>
+                </ul>
+              
+           </div>
+
            <div class="datosAlumno">
                      <div class="dA-img">
                          <img src="img/perfil.png" style="width: 100px;">
@@ -62,7 +71,8 @@
                      </div>
            </div>
 
-           <div class="tabla-principal">
+           <div class="vistasGrales vistaSkill" style="display:block;">
+               <div class="tabla-principal">
                 <div class="menu-tabla">
                      <div class="menu-tabla-opcion mto-title-active" id="mto-puntaje">
                         <span>Por Puntaje</span>
@@ -76,7 +86,7 @@
                      </div>
                 </div>
 
-                <div id="prueba" style="display:none">
+                <div class="OpcTabalas" id="prueba" style="display:none">
                   <div class="porPrueba">
                      <div class="card-porPrueba">
                           <div class="card-header-PorPrueba intelectualesStats">
@@ -191,7 +201,7 @@
                   </div>
                 </div>
 
-                <div id="puntaje">
+                <div class="OpcTabalas" id="puntaje">
                   <div class="porPuntaje">
                      <div class="PuntajeStats" id="alto">
                           <span class="titlePuntaje"><p>Habilidades Altas</p></span>
@@ -277,12 +287,108 @@
                           </div>
                      </div>
                   </div>
-                </div>
-                
+                </div>     
+               </div>
            </div>
-       
-           <footer>
-            
+
+           <div class="vistasGrales vistaInterp" style="display: none;">
+                <div class="contInfoInterp">
+                     <div class="infoInterp">
+                          <div class="titleInfoInterp">
+                               <div class="califInterp verde">
+                                    <p>78</p>
+                               </div>
+                               <span class="titleInfoInterp"><p>Vocabulario</p></span>
+
+                          </div>
+                          <div class="txtInfonInterp"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat est. Integer quis sodales diam. 
+                               Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc fringilla eleifend magna ut consequat.</p></div>
+                     </div>
+                     <div class="infoInterp">
+                          <div class="titleInfoInterp">
+                               <div class="califInterp rojo">
+                                    <p>7</p>
+                               </div>
+                               <span class="titleInfoInterp"><p>Habilidades Matemáticas</p></span>
+                          </div>
+                          <div class="txtInfonInterp"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat est. Integer quis sodales diam. 
+                               Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc fringilla eleifend magna ut consequat.</p></div>
+                     </div>
+                </div>
+
+                <div class="comentariosInfo">
+                     <div class="form-group">
+                        <label for=""><i class='far fa-comment-alt'></i> Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un comentario"></textarea>
+                        <div class="cdbi-txt btn-enviar">
+                             <button  class="btn" style="color: #fff;">Envíar</button>
+                        </div>
+                     </div>
+                </div>
+           </div>
+           <div class="vistasGrales vistaIdeas" style="display: none;">
+                <div class="contInfoInterp">
+                     <div class="infoInterp">
+                          <div class="titleInfoInterp">
+                               <div class="califInterp verde">
+                                    <p>78</p>
+                               </div>
+                               <span class="titleInfoInterp"><p>Vocabulario</p></span>
+
+                          </div>
+                          <div class="txtInfonInterp">
+                               <ul>
+                                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat est. </p></li>
+                                  <li><p>Integer quis sodales diam.</p></li>
+                                  <li><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc fringilla eleifend magna ut consequat.</p></li>
+                               </ul>
+                          </div>
+                          <div class="form-group">
+                               <label for=""><i class='far fa-comment-alt'></i> Comentarios</label>
+                               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un comentario"></textarea>
+                               <div class="cdbi-txt btn-enviar">
+                                    <button  class="btn" style="color: #fff;">Envíar</button>
+                               </div>
+                          </div>
+                     </div>
+                     <div class="infoInterp">
+                          <div class="titleInfoInterp">
+                               <div class="califInterp rojo">
+                                    <p>7</p>
+                               </div>
+                               <span class="titleInfoInterp"><p>Habilidades Matemáticas</p></span>
+                          </div>
+                          <div class="txtInfonInterp">
+                               <ul>
+                                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat est. </p></li>
+                                  <li><p>Integer quis sodales diam.</p></li>
+                                  <li><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc fringilla eleifend magna ut consequat.</p></li>
+                               </ul>
+                          </div>
+                          <div class="form-group">
+                               <label for=""><i class='far fa-comment-alt'></i> Comentarios</label>
+                               <textarea class="form-control" id="" rows="3" placeholder="Escribe un comentario"></textarea>
+                               <div class="cdbi-txt btn-enviar">
+                                    <button  class="btn" style="color: #fff;">Envíar</button>
+                               </div>
+                          </div>
+                     </div>
+                </div>
+           </div>
+           
+           <footer class="foo-ter">
+               <div class="row-footer rf-diagnostico">
+               <div class="derechos-reservados dr"></div>
+               <div class="contenedor-del-boton-iniciar cont-btnPrints">
+                    <div class="downloadPDF">
+                        <button class="btn"><i class='fas fa-download'></i> Descargar PDF</button>
+                    </div>
+                    <div class="cdbi-txt">
+                       <button  class="btn"><i class='fas fa-print'></i> Imprimir</button>
+                    </div>
+                  
+               </div>
+               </div>
            </footer>
       </div>
 
@@ -305,5 +411,34 @@
              document.querySelector('#mto-puntaje').classList.add("mto-title-active");
          }
       }
+   </script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $(".tab").click(function () {
+            var ID = $(this).attr("id");
+             $(".tab").removeClass("mG-active");
+             $(this).addClass("mG-active");  
+
+             if (this.id === "skillMap") {
+                 $(".vistaSkill").css("display", "block");
+                 $(".semaforo").css("display", "block");
+                 $(".vistaInterp").css("display", "none");
+                 $(".vistaIdeas").css("display", "none");
+             }else if (this.id === "interp") {
+                 $(".vistaInterp").css("display", "block");
+                 $(".vistaSkill").css("display", "none");
+                 $(".vistaIdeas").css("display", "none");
+                 $(".semaforo").css("display", "none");
+             }else if (this.id === "IdeasEstrat") {
+                 $(".vistaIdeas").css("display", "block");
+                 $(".vistaInterp").css("display", "none");
+                 $(".vistaSkill").css("display", "none");
+                 $(".semaforo").css("display", "none");
+             }else{
+                 //alert();
+             }
+             
+         });
+      });
    </script>
 </html>
