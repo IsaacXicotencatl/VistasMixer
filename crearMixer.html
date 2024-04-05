@@ -1,0 +1,112 @@
+<style>
+    .list-group-item{
+        border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+    }
+</style>
+    <div class="aviso">
+        <div class="mensaje-responsivo">
+            
+    <span>
+        <h3>Para una mejor experiencia de usuario le recomendamos poner su dispositivo en forma horizontal</h3>
+        </br>
+        <h6>Si sigue viendo este mensaje después de girar el dispositivo, le recomendamos colocar el zoom de su
+            navegador en 100%</h6>
+    </span>            <img class="img-fluid" src="img/rotate-phone.gif">
+        </div>
+    </div>
+
+    <div class="container content-all px-5" style="background: #fff;">
+        <header class="encabezado-potentor">
+            <div class="row">
+                <div class="col-md-10 col-8"></div>
+                <div class="col-md-2 col-4 logo-potentor mt-4">
+                    <img class="img-fluid" src="img/talentco_logo.png">
+                </div>
+            </div>
+        </header>
+
+        <div class="crearMix-content">
+            <div class="cM-form">
+                <div class="divForm">
+                    <div class="inputs-group">
+                        <div class="form-group">
+                            <label for="nombre">Nombre del mixer</label>
+                            <input type="text" class="form-control" id="nombre" style="font-size: 12px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="grados">Selecciona grados</label><br>
+                            <select multiple="multiple" name="grados" id="grados" style="font-size: 12px;">
+
+                                <option value="PRIM4">4to Primaria</option>
+                                <option value="PRIM5">5to Primaria</option>
+                                <option value="PRIM6">6to Primaria</option>
+                                <option value="SEC1">1ro Secundaria</option>
+                                <option value="SEC2">2do Secundaria</option>
+                                <option value="SEC3">3ro Secundaria</option>
+                                <option value="PREP1">1ro Preparatoria</option>
+                                <option value="PREP2">2do Preparatoria</option>
+                                <option value="PREP3">3ro Preparatoria</option>
+                                <option value="PRO">Profesional</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btns-group form-group pt-3">
+                        <button class="cdbi-txt btn-cM" onclick="buscarHabilidades();">Buscar habilidades                        </button>
+                    
+                        <button class="cdbi-txt btn-cM" onclick="crearConfiguracion();">Crear mixer                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cM-datosGral mt-5">
+                <div class="tiempoTotal mt-3">
+                    <span><p>Duracion estimada del mixer: <span id="totalTiempo"> 0 minutos</span> <i class="fas fa-clock"></i></p></span>   
+                </div>              
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="card-columns" id="accordion">
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="row-footer pb-4">
+                <div class="derechos-reservados dr">
+                    <p>Powered by TalentCo. Todos los derechos reservados®.</p>
+                </div>
+                <div class="contenedor-del-boton-iniciar">
+                    <div class="cdbi-txt">
+                        <a href="http://localhost/dppaMixer/sistema" class="" style="color: #fff; text-decoration-line: none;">Regresar al inicio</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn btn-close" data-dismiss="modal"><p><i class='far fa-window-close fa-2x'></i></p></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="listado_habilidades" id="listado">
+                            <ul id="list_habil">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -50,15 +50,14 @@
                     </div>
                     </div>
                     <div class="btns-group form-group">
-                         <button class="cdbi-txt btn-cM">Guardar cambios</button> 
-                         <button class="cdbi-txt btn-cM">Eliminar evaluación</button> 
+                         <button class="cdbi-txt btn-cM">Buscar Habilidades</button> 
                     </div>
                  </form>
 
                   
                </div>
 
-               <div class="cM-datosGral">
+               <!-- <div class="cM-datosGral">
                    <div class="tiempoTotal">
                         <span><p>
                             Tiempo total de la evaluación: 45<i class="fas fa-clock"></i>
@@ -75,6 +74,62 @@
                              <div class="hovicon effect-8">2</div>
                         </div>
                    </div>     
+               </div> -->
+               <div class="tablaResumen">
+                   <table class="table">
+                     <thead class="thead-dark">
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Tipo de Prueba</th>
+                              <th scope="col">Habilidad</th>
+                              <th scope="col">Tiempo de Aplicación</th>
+                            </tr>
+                     </thead>
+                     <tbody>
+                           <tr>
+                              <th scope="row">
+                                  <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
+                              </th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">
+                                  <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
+                              </th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">
+                                  <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
+                              </th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">
+                                  <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
+                              </th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">
+                                  <input class="chkbox-Tabla"  type="checkbox" id="check1" checked/>
+                              </th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                           </tr>
+                     </tbody>
+                   </table>
+
+
                </div>
               
            </div>
@@ -83,15 +138,15 @@
                <!--  <h4><strong>Resultados de evaluación: Test 3 evaluaciones 7 septiembre</strong></h4>
                 <p>Consulta el avance de tu evaluación.</p> -->
            </div> 
-         <div class="mt-5">
+           <div class="mt-5" style="">
             <div class="card-columns" id="accordion">
 
                <div class="card">
                   <div class="intelectuales">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                        Habilidades intelectuales 
-                     </button> 
-                     <button id="Habilidades_Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+                     </div> 
+                    
                   </div>
                   <div>
                         <div class="card-body">
@@ -187,6 +242,7 @@
                                      </div>
                                  </li>
                              </ul>
+                              <button id="Habilidades_Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
                       </div>   
                </div>
@@ -359,7 +415,7 @@
                </div>
 
             </div>
-         </div>
+           </div>
        
          <footer>
             <div class="row-footer">
@@ -367,9 +423,10 @@
                   <p>Powered by Potentor. Todos los derechos reservados®.</p>
                </div>
                <div class="contenedor-del-boton-iniciar">
-                  <div class="cdbi-txt">
+                    <button class="cdbi-txt">Guardar cambios</button> 
+                    <div class="cdbi-txt">
                        <a href="https://dppa.lexiumonline.com/" class="" style="color: #fff;">Regresar a plataforma</a>
-                  </div>
+                    </div>
                </div>
 
                
