@@ -151,11 +151,49 @@
      color: white!important;
      padding: 0.25rem!important;
 }
+
+/*STYLES CREAR MIXER*/
+ .menuMixer{
+     width: 100%;
+}
+ .menuMixer span{
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     font-style: normal;
+ }
+ .menuMixer ul{
+     width: 60%;
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin-bottom: 0;
+     margin-top: 1%;
+}
+ .menuMixer ul li{
+     float: left;
+     width: 30%;
+     background: #f9f9f9;
+     padding: 2% 1%;
+     border: 1px solid #dce2e7;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     text-align: center;
+     cursor: pointer;
+}
+ .selecPorHabilidad{
+    border: 3px solid rgb(105, 94, 232);
+    box-shadow: rgba(105, 94, 232, 0.35)  0px 30px 60px -12px;
+
+ }
  .btn{
      padding: 0.5rem!important;
 }
  .btn-titulo{
      width: 100%!important;
+}
+ .btn-titulo p{
+     color: white;
+     margin-bottom: 0;
 }
  .btn-indice{
      background: #b4adff!important;
@@ -163,51 +201,73 @@
      font-size: 0.85rem!important;
      border: none!important;
      display: block!important;
-     margin: 0 auto!important;
+     margin: 3% auto!important;
 }
  .btn-indice:hover{
      background: #695EE8!important;
 }
+ .mt-5{
+    padding: 0 3%;
+}
+ .card-columns{
+     width: 100%;
+     color: white;
+ }
  .card-body{
-     padding: 0.25rem!important;
+     padding: 0rem!important;
      border: 1px solid #dce2e7!important;
 }
  .list-group-item{
      border: none!important;
+     cursor: pointer!important;
 }
+
+ .titleHability{
+     position: relative;
+}
+ .titleHability i{
+     position: absolute;
+     right: 4%;
+     bottom: 25%;
+ }
+
  .intelectuales{
      background: #3782C6;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
  .socioemocionales{
      background: #ED396A;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
  .destudio{
      background: #f6941c;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
  .deejecucion{
      background: #966ba5;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
  .procesamiento{
      background: #34bda7;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
  .metacognitivas{
      background: #fed53c;
      color: white;
      padding: 0.25rem;
+     text-align: center;
 }
- .metacognitivas button, .intelectuales button, .socioemocionales button, .destudio button, .deejecucion button, .procesamiento button{
-     color: white;
-}
+
  .intelectualesStats{
      border-bottom:2px solid #3782C6;
      color: #3782C6!important;
@@ -259,23 +319,23 @@
 }
  .list-group-item{
      display: inline-flex!important;
+     border-bottom: 1px solid #dce2e7 !important;
 }
+ .lgiChecked{
+     background-color: #e5e2fe!important;
+ }
  .content-group{
      width: 50%;
 }
  .content-group-txt{
      width: 80%;
+     color: #19284d;
 }
  .content-group-txt p{
      margin-bottom: 0;
 }
- .content-group-timer{
-     width: 20%;
-     text-align: right;
-}
- .content-group-timer a{
-     color: #acacac!important;
-}
+
+
  .content-group a i {
      transition: all 0.3s linear;
 }
@@ -497,6 +557,7 @@
      transition: background-color 0.3s ease-in-out;
 }
  .chkbox-Tabla:checked {
+     border-color: rgb(80, 67, 250);
      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='rgba(105,94,232,1.0)' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
 }
  .chkbox-Tabla:focus {

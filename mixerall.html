@@ -30,7 +30,7 @@
                   </div>
                </div>
            </header>
-            <div class="crearMix-content">
+           <div class="crearMix-content">
                <div class="cM-form">
                  <form>
                     <div class="inputs-group">
@@ -90,326 +90,325 @@
                               <th scope="row">
                                   <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
                               </th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
+                              <td>Intelectual</td>
+                              <td>Razonamiento Lógico</td>
+                              <td>5 Minutos</td>
                            </tr>
                            <tr>
                               <th scope="row">
                                   <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
                               </th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
+                              <td>Intelectual</td>
+                              <td>Razonamiento Lógico</td>
+                              <td>5 Minutos</td>
                            </tr>
                            <tr>
                               <th scope="row">
                                   <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
                               </th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
+                              <td>Intelectual</td>
+                              <td>Razonamiento Lógico</td>
+                              <td>5 Minutos</td>
                            </tr>
                            <tr>
                               <th scope="row">
-                                  <input class="chkbox-Tabla" type="checkbox" id="check1" checked/>
+                                  <input class="chkbox-Tabla" type="checkbox" id="check1"/>
                               </th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
+                              <td>Intelectual</td>
+                              <td>Razonamiento Lógico</td>
+                              <td>5 Minutos</td>
                            </tr>
                            <tr>
                               <th scope="row">
-                                  <input class="chkbox-Tabla"  type="checkbox" id="check1" checked/>
+                                  <input class="chkbox-Tabla"  type="checkbox" id="check1"/>
                               </th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
+                              <td>Intelectual</td>
+                              <td>Razonamiento Lógico</td>
+                              <td>5 Minutos</td>
                            </tr>
                      </tbody>
                    </table>
 
 
-               </div>
-              
+               </div>   
            </div>
 
-           <div class="col-12 rounded">
-               <!--  <h4><strong>Resultados de evaluación: Test 3 evaluaciones 7 septiembre</strong></h4>
-                <p>Consulta el avance de tu evaluación.</p> -->
+           <div class="col-12">
+                <div class="menuMixer">
+                  <span>Elige cómo crear tu mixer:</span>
+                  <ul>
+                    <li class="tab mG-active" id="porHabilidad">Por tipo de habilidades</li>
+                    <li class="tab" id="porPrueba">Por prueba</li>
+                    <li class="tab" id="verTodas">Ver todas las habilidades</li>
+                  </ul>
+                </div>
            </div> 
-           <div class="mt-5" style="">
-            <div class="card-columns" id="accordion">
+
+           <div class="porHabil mt-5">
+                <div class="card-columns" id="accordion">
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="intelectuales" id="HabIntelectual">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne"><p>Habilidades intelectuales</p></div> 
+                          </div>
+                     </div>
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="socioemocionales" id="HabSociemocional">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><p>Socio Emocionales</p></div>  
+                        </div>
+                     </div>
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="destudio" id="HabDestudio">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree"><p>Habilidades De Estudio</p></div> 
+                          </div>
+                     </div>
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="deejecucion" id="HabDeejecucion">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><p>Habilidades De Ejecución</p></div>
+                          </div>
+                     </div>
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="procesamiento" id="HabProcesamiento">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><p>Procesamiento de Información</p></div>
+                          </div> 
+                     </div>
+                     <div class="card">
+                          <div onclick="selectHabilidad(this.id)" class="metacognitivas" id="HabMetacognitivas">
+                               <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"><p>Metacognitivas</p></div> 
+                          </div>
+                     </div>
+                </div>
+           </div>
+     
+           <div class="porPrueb mt-5" style="display: none;"></div>
+           
+           <div class="VerAll mt-5" style="display: none;">
+            <div class="card-columns">
 
                <div class="card">
-                  <div class="intelectuales">
-                     <div class="btn btn-titulo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                       Habilidades intelectuales 
-                     </div> 
-                    
+                  <div class="titleHability intelectuales" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <div class="btn btn-titulo"><p>Intelectuales</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush habi_intelec">
                                  <li class="list-group-item">
-                                     <div class="content-group-txt" data-parent=""><p>Analogías</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
+                                     <div class="content-group-txt" data-parent="">
+                                        <p>Analogías</p></div>
+                                    
                                  </li>
                                  <li class="list-group-item">
-                                     <div class="content-group-txt" data-parent=""><p>Analogías Simbólicas</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
+                                     <div class="content-group-txt" data-parent="">
+                                        <p>Analogías Simbólicas</p></div>
+                                    
                                  </li>
                                  <li class="list-group-item">
-                                     <div class="content-group-txt" data-parent="matematicas"><p>Razonamiento Lógico</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
+                                     <div class="content-group-txt" data-parent="matematicas">
+                                        <p>Razonamiento Lógico</p></div>
+                                   
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Aplicación de Hechos</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                     
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Juicio de Conceptos</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Orientación</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Análisis de Hechos</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Conceptualización de Hechos</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Discriminación</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Planeación</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                     
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Progresión Númerica</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Clasificación</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    
                                  </li>
                              </ul>
                               <button id="Habilidades_Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
-                      </div>   
+                  </div>   
                </div>
 
                <div class="card">
-                  <div class=" socioemocionales">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                       Socio Emocionales
-                     </button>  
-                     <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+                  <div class="titleHability socioemocionales" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                     <div class="btn btn-titulo"><p>Socio Emocionales</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i> 
                   </div>
-                   <div>
+                   <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
+                                   <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                    <div class="content-group-txt"><p>Habilidades Emocionales</p></div>
-                                    <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                 </li>
                              </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
                    </div>
                </div>
                
                <div class="card">
-                  <div class=" destudio">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
-                       Habilidades De Estudio 
-                     </button> 
-                     <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+                  <div class="titleHability destudio" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
+                     <div class="btn btn-titulo"><p>De Estudio</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div>
+                  <div id="collapseTree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p> LEXIA Técnicas y Hábitos de Estudio</p></div>
-                                      <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
-                                 
                              </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
                   </div>
                </div>
 
                <div class="card">
-                  <div class=" deejecucion">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                       Habilidades De Ejecución 
-                     </button> 
-                     <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button> 
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                     <div class="btn btn-titulo"><p>De Ejecución</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Factores de Liderazgo</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Valores de Integridad</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Hábitos</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Perfil de Éxito</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>7 Factores de Selección</p></div>
-                                     <div class="content-group-timer">
-                                        <a ><i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Skill Test</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Próposito de Vida</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Insight</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Knowledge Profile</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Manejo de información Tecnológica</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                                  <li class="list-group-item">
+                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Metas
                                      </p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
                                  </li>
                              </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button> 
                         </div>
                   </div>
                </div>
 
                <div class="card">
-                  <div class=" procesamiento">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                        Procesamiento de Información
-                     </button> 
-                     <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+                  <div class="titleHability procesamiento" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                     <div class="btn btn-titulo"><p>Procesamiento de Información</p></div>
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Evaluación de velocidad y Comprensión Lectora </p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
+                                    <div class="content-group-txt"><p>Evaluación de velocidad y Comprensión Lectora </p></div>
                                 </li>
                              </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
                   </div>
                </div>
 
                <div class="card">
-                  <div class=" metacognitivas">
-                     <button class="btn btn-titulo" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                        Metacognitivas
-                     </button> 
-                     <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+                  <div class="titleHability metacognitivas" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                     <div class="btn btn-titulo"><p>Metacognitivas</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                   <div>
+                   <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                     <div class="content-group-txt"><p>Mapa preferencias de Aprendizaje</p></div>
-                                     <div class="content-group-timer">
-                                        <a>15&nbsp;<i class="fas fa-clock"></i></a>
-                                     </div>
+                                    <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
+                                    <div class="content-group-txt"><p>Mapa preferencias de Aprendizaje</p></div>
                                 </li>
                              </ul>
+                              <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
                         </div>
                    </div>
                </div>
@@ -434,7 +433,7 @@
          </footer>
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -459,8 +458,24 @@
       </div>
     </div>
   </div>
-</div>
+            </div>
       </div>
+
+      <script type="text/javascript">
+          function selectHabilidad (clicked_id) {
+               var x = document.getElementById(clicked_id);
+                 x.classList.toggle("selecPorHabilidad");
+          }
+
+         
+          function limpiarListado(){
+               var listado = document.getElementsByClassName("selecPorHabilidad");
+               for (var i = 0; i<listado.length; i++) {
+                  listado[i].classList.remove("selecPorHabilidad");
+    
+               }
+          }
+      </script>
 
 
       <script type="text/javascript">
@@ -499,7 +514,63 @@
          });
       </script>
       <script type="text/javascript">
-         
-      </script>
+      $(document).ready(function() {
+         $(".tab").click(function () {
+            var ID = $(this).attr("id");
+             $(".tab").removeClass("mG-active");
+             $(this).addClass("mG-active");  
+            if (this.id === "porHabilidad") {
+                 $(".porHabil").css("display", "block");
+                 $(".porPrueb").css("display", "none");
+                 $(".verAll").css("display", "none");
+             }else if (this.id === "porPrueba") {
+                 $(".porPrueb").css("display", "block");
+                 $(".porHabil").css("display", "none");
+                 $(".verAll").css("display", "none");
+             }else if (this.id === "verTodas") {
+                 $(".verAll").css("display", "block");
+                 $(".porHabil").css("display", "none");
+                 $(".porPrueb").css("display", "none");
+             }else{
+                 //alert();
+             }
+         });
+      });
+   </script>
+
+   <script type="text/javascript">
+     $(".list-group-item").on("click", function(e){
+        var iden = $(this).children().first();
+         if ($(iden).is(":checked")) {
+            $(iden).prop('checked',false);
+            $(this).removeClass("lgiChecked");
+         } else {
+            $(iden).prop('checked',true);
+            $(this).addClass("lgiChecked"); 
+         }
+     });
+
+
+     
+
+   </script>
+
+   <script type="text/javascript">
+    var contClick = 0
+    $(".titleHability").on("click", function(e){
+          contClick ++;
+          console.log(contClick)
+            if (contClick == 1)  {
+               $(this).children('.dosUp').css("display", "block");
+               $(this).children('.unoDown').css("display", "none");
+            }if (contClick == 2) {
+               $(this).children('.dosUp').css("display", "none");
+               $(this).children('.unoDown').css("display", "block");
+               contClick = 0;
+            }
+     });   
+   </script>
+    
+
    </body>
 </html>
