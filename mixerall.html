@@ -182,7 +182,7 @@
            <div class="porPrueb mt-5" style="display: none;">
               <div class="card-columns">
 
-               <div class="card">
+               <div class="card" onclick="selectHabilidad(this.id)" id="HabIntel">
                   <div class="titleHability intelectuales" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                      <div class="btn btn-titulo"><p>Intelectuales</p></div> 
                      <div class="btn btn-titulo"><p>Habilidades Intelectuales</p></div> 
@@ -193,80 +193,65 @@
                         <div class="card-body">
                              <ul class="list-group list-group-flush habi_intelec">
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="">
                                         <p>Analogías</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="">
                                         <p>Analogías Simbólicas</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas">
                                         <p>Razonamiento Lógico</p></div>
                                    
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Aplicación de Hechos</p></div>
                                      
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Juicio de Conceptos</p></div>
 
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Orientación</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Análisis de Hechos</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Conceptualización de Hechos</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Discriminación</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Planeación</p></div>
                                      
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Progresión Númerica</p></div>
                                     
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Clasificación</p></div>
                                     
                                  </li>
@@ -281,19 +266,81 @@
                   </div>   
                </div>
 
-               <div class="card">
-                  <div class="titleHability socioemocionales" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+               <div class="card" onclick="selectHabilidad(this.id)" id="PCA" >
+                  <div class="titleHability intelectuales" data-toggle="collapse" data-target="#collapsePCA" aria-expanded="true" aria-controls="collapsePCA">
+                     <div class="btn btn-titulo"><p>Intelectuales</p></div> 
+                     <div class="btn btn-titulo"><p>Pensamiento Crítico y Analítico</p></div> 
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
+                  </div>
+                  <div id="collapsePCA" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                             <ul class="list-group list-group-flush habi_intelec">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="">
+                                        <p>Implicaciones Gráficas</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="">
+                                        <p>Juicio de Conceptos</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent="matematicas">
+                                        <p>Discriminación Conceptual</p></div>
+                                   
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Implicaciones Conceptuales</p></div>
+                                     
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Juicio de Conceptos Verbales</p></div>
+
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Discriminación Verbal</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Implicaciones Verbales</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Anplicación de Hechos Simbólicos</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>juicio de Conceptos Gráficos</p></div>
+                                    
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt" data-parent=""><p>Discriminación Gráfica</p></div>Emo                               </li>
+                                 
+                             </ul>
+                              <button id="Habilidades_Intelectuales" type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
+
+                              <div class="notas">
+                                  <p>NOTA: Selecciona al menos doss habilidades</p>
+                                  <p>NOTA: Se requiere seleccionar todas las habilidades</p>
+                              </div>
+                        </div>
+                  </div>   
+               </div>
+
+               <div class="card" onclick="selectHabilidad(this.id)" id="HabEmo">
+                  <div class="titleHability socioemocionales" data-toggle="collapse" data-target="#collapseEmo" aria-expanded="true" aria-controls="collapseEmo">
                      <div class="btn btn-titulo"><p>Socio Emocionales</p></div> 
                      <div class="btn btn-titulo"><p>Habilidades Emocionales</p></div> 
 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i> 
                   </div>
-                   <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseEmo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                   <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                    <div class="content-group-txt"><p>Habilidades Emocionales</p></div>
                                 </li>
                              </ul>
@@ -304,20 +351,19 @@
                                   <p>NOTA: Se requiere seleccionar todas las habilidades</p>
                               </div>
                         </div>
-                   </div>
+                  </div>
                </div>
                
-               <div class="card">
-                  <div class="titleHability destudio" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
+               <div class="card" onclick="selectHabilidad(this.id)" id="Destudy">
+                  <div class="titleHability destudio" data-toggle="collapse" data-target="#collapseDeEstudio" aria-expanded="true" aria-controls="collapseDeEstudio">
                      <div class="btn btn-titulo"><p>De Estudio</p></div> 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div id="collapseTree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseDeEstudio" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p> LEXIA Técnicas y Hábitos de Estudio</p></div>
                                  </li>
                              </ul>
@@ -331,31 +377,27 @@
                   </div>
                </div>
 
-               <div class="card">
-                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+               <div class="card" onclick="selectHabilidad(this.id)" id="Habitos" >
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseHabitos" aria-expanded="true" aria-controls="collapseHabitos">
                      <div class="btn btn-titulo"><p>De Ejecución</p></div> 
                      <div class="btn btn-titulo"><p>Hábitos</p></div> 
 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseHabitos" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Consistencia</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Prudencia</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Cooperacion</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Persistencia</p></div>
                                  </li>
                              </ul>
@@ -369,35 +411,30 @@
                   </div>
                </div>
 
-               <div class="card">
-                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+               <div onclick="selectHabilidad(this.id)" id="proposito"  class="card">
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseProposito" aria-expanded="true" aria-controls="collapseProposito">
                      <div class="btn btn-titulo"><p>De Ejecución</p></div> 
                      <div class="btn btn-titulo"><p>Propósito de vida</p></div> 
 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseProposito" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Autosuficiencia</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Optimismo</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Satisfacción Vital</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Manejo de Emociones</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Autoimagen</p></div>
                                  </li>
                              </ul>
@@ -411,23 +448,21 @@
                   </div>
                </div>
 
-               <div class="card">
-                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+               <div  onclick="selectHabilidad(this.id)" id="Valores" class="card">
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseValores" aria-expanded="true" aria-controls="collapseValores">
                      <div class="btn btn-titulo"><p>De Ejecución</p></div> 
                      <div class="btn btn-titulo"><p>Valores de Integridad</p></div> 
 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseValores" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Valores de Integridad</p></div>
                                  </li>
                                  <li class="list-group-item">
-                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Optimismo</p></div>
                                  </li>
                              </ul>
@@ -441,17 +476,93 @@
                   </div>
                </div>
 
-               <div class="card">
-                  <div class="titleHability procesamiento" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+               <div onclick="selectHabilidad(this.id)" id="Factores" class="card">
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseFactores" aria-expanded="true" aria-controls="collapseFactores">
+                     <div class="btn btn-titulo"><p>De Ejecución</p></div> 
+                     <div class="btn btn-titulo"><p>Factores de Liderazgo</p></div> 
+
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
+                  </div>
+                  <div id="collapseFactores" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                             <ul class="list-group list-group-flush">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Visión</p></div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Ritmo de Trabajo</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Pertenencia</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Control</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Enfoque Estratégico</p></div>
+                                 </li>
+                             </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button> 
+
+                              <div class="notas">
+                                  <p>NOTA: Selecciona al menos doss habilidades</p>
+                                  <p>NOTA: Se requiere seleccionar todas las habilidades</p>
+                              </div>
+                        </div>
+                  </div>
+               </div>
+
+               <div onclick="selectHabilidad(this.id)" id="Metas" class="card">
+                  <div class="titleHability deejecucion" data-toggle="collapse" data-target="#collapseMetas" aria-expanded="true" aria-controls="collapseMetas">
+                     <div class="btn btn-titulo"><p>De Ejecución</p></div> 
+                     <div class="btn btn-titulo"><p>Metas</p></div> 
+
+                     <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
+                     <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
+                  </div>
+                  <div id="collapseMetas" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                             <ul class="list-group list-group-flush">
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Aprender</p></div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Amar</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Hacer</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Trascender</p></div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Bienestar</p></div>
+                                 </li>
+                                  <li class="list-group-item">
+                                     <div class="content-group-txt"><p>Prosperar</p></div>
+                                 </li>
+                             </ul>
+                             <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button> 
+
+                              <div class="notas">
+                                  <p>NOTA: Selecciona al menos doss habilidades</p>
+                                  <p>NOTA: Se requiere seleccionar todas las habilidades</p>
+                              </div>
+                        </div>
+                  </div>
+               </div>
+
+               <div onclick="selectHabilidad(this.id)" id="Process" class="card">
+                  <div class="titleHability procesamiento" data-toggle="collapse" data-target="#collapseProcesamiento" aria-expanded="true" aria-controls="collapseProcesamiento">
                      <div class="btn btn-titulo"><p>Procesamiento de Información</p></div>
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseProcesamiento" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                     <div class="content-group-txt"><p>Evaluación de velocidad y Comprensión Lectora </p></div>
                                 </li>
                              </ul>
@@ -465,18 +576,42 @@
                   </div>
                </div>
 
-               <div class="card">
-                  <div class="titleHability metacognitivas" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+               <div onclick="selectHabilidad(this.id)" id="Metacogni" class="card">
+                  <div class="titleHability metacognitivas" data-toggle="collapse" data-target="#collapseMeta" aria-expanded="true" aria-controls="collapseMeta">
                      <div class="btn btn-titulo"><p>Metacognitivas</p></div> 
+                     <div class="btn btn-titulo"><p>Metacognición</p></div> 
                      <i class='unoDown fas fa-angle-down fa-2x' style='color:#fff' id="down"></i>
                      <i class='dosUp fas fa-angle-up fa-2x' style='color:#fff; display: none;' id="up"></i>
                   </div>
-                   <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                   <div id="collapseMeta" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
-                                    <div class="content-group-txt"><p>Mapa preferencias de Aprendizaje</p></div>
+                                    <div class="content-group-txt"><p>Lenguaje Visual</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Oral</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Kinestesico</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Númerico Visual</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Escrito</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Individual</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Lenguaje Auditivo</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>En Equipo</p></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="content-group-txt"><p>Númerica Auditiva</p></div>
                                 </li>
                              </ul>
                               <button type="button" class="btn btn-indice btn-primary" data-toggle="modal" data-target="#exampleModal">Seleccionar Índice</button>
@@ -503,80 +638,80 @@
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush habi_intelec">
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="">
                                         <p>Analogías</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="">
                                         <p>Analogías Simbólicas</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas">
                                         <p>Razonamiento Lógico</p></div>
                                    
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Aplicación de Hechos</p></div>
                                      
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Juicio de Conceptos</p></div>
 
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Seguimiento de Instrucciones</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Orientación</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Análisis de Hechos</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Conceptualización de Hechos</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Discriminación</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Planeación</p></div>
                                      
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent=""><p>Vocabulario</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Vocabulario de Matématicas</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Progresión Númerica</p></div>
                                     
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt" data-parent="matematicas"><p>Clasificación</p></div>
                                     
@@ -601,7 +736,7 @@
                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
+                                <li class="list-group-item lgi">
                                    <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                    <div class="content-group-txt"><p>Habilidades Emocionales</p></div>
                                 </li>
@@ -625,7 +760,7 @@
                   <div id="collapseTree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p> LEXIA Técnicas y Hábitos de Estudio</p></div>
                                  </li>
@@ -649,47 +784,47 @@
                   <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Factores de Liderazgo</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Valores de Integridad</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Hábitos</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Perfil de Éxito</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>7 Factores de Selección</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Skill Test</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Próposito de Vida</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Insight</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Knowledge Profile</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Manejo de información Tecnológica</p></div>
                                  </li>
-                                 <li class="list-group-item">
+                                 <li class="list-group-item lgi">
                                      <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                      <div class="content-group-txt"><p>Metas
                                      </p></div>
@@ -714,7 +849,7 @@
                   <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
+                                <li class="list-group-item lgi">
                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                     <div class="content-group-txt"><p>Evaluación de velocidad y Comprensión Lectora </p></div>
                                 </li>
@@ -738,7 +873,7 @@
                    <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
+                                <li class="list-group-item lgi">
                                     <input class="chkbox-Tabla" type="checkbox" id="check1"/> &nbsp;
                                     <div class="content-group-txt"><p>Mapa preferencias de Aprendizaje</p></div>
                                 </li>
@@ -878,7 +1013,7 @@
    </script>
 
    <script type="text/javascript">
-     $(".list-group-item").on("click", function(e){
+     $(".lgi").on("click", function(e){
         var iden = $(this).children().first();
          if ($(iden).is(":checked")) {
             $(iden).prop('checked',false);
@@ -887,18 +1022,13 @@
             $(iden).prop('checked',true);
             $(this).addClass("lgiChecked"); 
          }
-     });
-
-
-     
-
+     });     
    </script>
 
    <script type="text/javascript">
     var contClick = 0
     $(".titleHability").on("click", function(e){
           contClick ++;
-          console.log(contClick)
             if (contClick == 1)  {
                $(this).children('.dosUp').css("display", "block");
                $(this).children('.unoDown').css("display", "none");
