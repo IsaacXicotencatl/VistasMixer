@@ -140,6 +140,7 @@
  .btn-enviar{
      float: right;
      margin-top: 2%;
+     margin-bottom: 2%;
 }
  [data-toggle="collapse"] .fa:before {
      content: "\f054";
@@ -1145,9 +1146,11 @@
  .txtInfonInterp ul li p {
      margin-bottom: 0;
 }
+ .form-group {
+    margin-bottom: 5rem!important;
+}
  .comentariosInfo{
      padding: 3% 7.8%;
-     height: 40vh;
 }
  textarea::placeholder {
      opacity: 0.5;
@@ -1230,9 +1233,7 @@
      .menuGeneral ul li {
          width: 33%;
     }
-     .comentariosInfo {
-         height: 20vh;
-    }
+    
 }
  @media (max-width: 767px) and (min-width: 610px){
      .txt-info{
@@ -1315,9 +1316,6 @@
     }
      .infoInterp {
          width: 80%;
-    }
-     .comentariosInfo {
-         height: 54vh;
     }
      .derechos-reservados {
          width: 0%;
