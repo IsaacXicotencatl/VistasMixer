@@ -137,10 +137,15 @@
  .cdbi-txt button:hover{
      color: #fff;
 }
+ .btn-env2{
+     width: 50px;
+ }
  .btn-enviar{
+     width: 35px;
+     height: 35px;
      float: right;
-     margin-top: 2%;
-     margin-bottom: 2%;
+     margin-top: 1%;
+     margin-bottom: 1%;
 }
  [data-toggle="collapse"] .fa:before {
      content: "\f054";
@@ -1152,6 +1157,9 @@
  .comentariosInfo{
      padding: 3% 7.8%;
 }
+ textarea{
+    font-size: 12px!important;
+ }
  textarea::placeholder {
      opacity: 0.5;
      color: #ece6f5;
